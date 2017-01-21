@@ -1,0 +1,128 @@
+.header-main
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  padding-top: 50px
+  z-index: 1000
+  @media all and (max-width: 767px)
+    padding-top: 0
+  .container
+    .row
+      .header-left
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        @media all and (max-width: 767px)
+          justify-content: space-between
+          background-color: #eff2f6
+        .header-logo
+          position: relative
+          margin-right: 70px
+          @media (min-width: 576px) and (max-width: 769px)
+            margin-right: 30px
+          &:hover
+            .header-logo-circle
+              &::before
+                animation-name: out
+          h2
+            font: 700 24px/40px Montserrat
+            color: #000
+            margin-top: 0
+            margin-bottom: 0
+          @keyframes out
+            100%
+              top: -12px
+              left: -12px
+              right: -12px
+              bottom: -12px
+              border-color: rgba(0, 0, 0, 0)
+          .header-logo-circle
+            position: absolute
+            top: 4px
+            right: -12px
+            border: 3px solid #ff343d
+            border-radius: 50%
+            width: 11px
+            height: 11px
+            &::before
+              position: absolute
+              content: ""
+              border: 3px solid #ff343d
+              border-radius: 50%
+              top: -3px
+              bottom: -3px
+              left: -3px
+              right: -3px
+              animation: .7s infinite
+        .header-phone
+          color: #92a1a5
+          transition: .4s
+          i
+            display: inline-block
+            font-size: 14px
+          span
+            font: 400 14px/40px Montserrat
+          &:hover
+            color: #ff343d
+      .header-right
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        @media all and (max-width: 767px)
+          justify-content: space-between
+          background-color: #ff343d
+        .header-buy-now
+          color: #ffffff
+          font: 700 16px/40px Montserrat
+          margin-right: 40px
+        .header-btn
+          display: flex
+          flex-wrap: wrap
+          align-items: center
+          width: 26px
+          #header-btn-menu
+            position: relative
+            margin: 0
+            padding: 0
+            width: 26px
+            height: 14px
+            background: none
+            border: none
+            outline: none
+            cursor: pointer
+            &:hover
+              span,
+              span::before,
+              span::after
+                background-color: #fff
+            span,
+            span::before,
+            span::after
+              position: absolute
+              display: block
+              content: ""
+              width: 26px
+              height: 2px
+              background-color: #fff
+              transition: .3s
+            span
+              top: 6px
+              &::before
+                top: -5px
+              &::after
+                top: 5px
+          #header-btn-menu.active-menu
+            width: 30px
+            span
+              background-color: transparent
+              &::before
+                width: 26px
+                height: 2px
+                transform: rotate(20deg)
+                top: 0
+              &::after
+                width: 26px
+                height: 2px
+                transform: rotate(-20deg)
+                top: 0

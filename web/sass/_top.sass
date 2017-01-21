@@ -1,0 +1,117 @@
+.section-top
+  position: relative
+  background-color: #eff2f6
+  height: 100vh
+  .container-fluid
+    height: 100%
+    overflow: hidden
+    .top-section-colors
+      position: absolute
+      top: 0
+      left: 60%
+      right: 0
+      bottom: 0
+      background-color: #ff343d
+      overflow: hidden
+      @media (max-width: 767px)
+        display: none
+      .top-section-logo
+        position: absolute
+        top: 280px
+        right: -320px
+        display: inline-block
+        text-shadow: 0 0 55px rgba(0, 1, 1, 0.15)
+        color: rgba(#ff343d, 1)
+        font: 700 300px/300px Montserrat
+        transform: rotate(90deg)
+        transition: .5s
+        user-select: none
+    .copter-bg
+      position: absolute
+      top: 50%
+      left: 60%
+      transform: translate(-50%,-50%)
+      width: 30%
+      z-index: 10
+      @media (max-width: 767px)
+        display: none
+    .copter-img
+      position: absolute
+      top: 50%
+      left: 60%
+      transform: translate(-50%,-50%)
+      width: 48%
+      z-index: 11
+      @media (max-width: 767px)
+        display: none
+    .container
+      height: 100%
+      z-index: 100
+      .row
+        height: 100%
+        position: relative
+        .top-slider-container
+          position: absolute
+          top: 45%
+          bottom: 5%
+          left: 5%
+          right: 65%
+          @media (max-width: 767px)
+            top: 100px
+            left: 15%
+            right: 15%
+            bottom: 15%
+          .top-slider-wrapper
+            .top-slider-slide
+              overflow: hidden
+              h3
+                color: #000
+                font: 700 60px/50px Montserrat
+                margin-bottom: 50px
+                @media (max-width: 767px)
+                  font-size: 20px
+                  margin-bottom: 10px
+                  line-height: 16px
+                @media (min-width: 768px) and (max-width: 1199px)
+                  font-size: 40px
+                  margin-bottom: 20px
+              p
+                color: #92a1a5
+                font: 400 14px/30px Montserrat
+                @media (max-width: 1199px)
+                  font-size: 12px
+                  line-height: 24px
+        .top-slider-pagination
+          position: absolute
+          top: 40%
+          left: 0
+          @media (max-width: 767px)
+            top: 100px
+          span
+            display: block
+            background-color: #a1a1a1
+            width: 7px
+            height: 7px
+            margin-bottom: 20px
+            transition: .5s
+            @media (max-width: 767px)
+              width: 5px
+              height: 5px
+              margin-bottom: 10px
+          .swiper-pagination-bullet-active
+            background-color: #ff343d
+        .top-section-scroll
+          position: absolute
+          left: -55px
+          bottom: 10%
+          color: #000
+          margin: 0
+          font: 700 18px/18px Montserrat
+          transform: rotate(-90deg)
+          animation: top-scroll .7s infinite
+          @media (max-width: 767px)
+            font-size: 10px
+            left: -30px
+        @keyframes top-scroll
+          60%
+            bottom: 14%

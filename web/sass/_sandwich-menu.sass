@@ -1,0 +1,72 @@
+/*----------------- menu -----------------*/
+
+.sandwich-menu
+  position: fixed
+  z-index: 1001
+  width: 210px
+  height: 100%
+  right: -210px
+  @media (max-width: 1199px)
+    width: 130px
+    right: -130px
+
+.sandwich-menu-open
+  right: 0
+
+/*------------------ body push ----------------*/
+
+.sandwich-menu-push
+  position: relative
+  left: 0
+
+.sandwich-menu-push-toleft
+  left: -210px
+  @media (max-width: 1199px)
+    left: -130px
+
+
+/*------------------ transitions ----------------*/
+
+.sandwich-menu-push,
+.sandwich-menu
+  transition: all .2s ease
+
+/*------------------ style ----------------*/
+
+.sandwich-menu-style
+  background-color: #eff2f6
+  @media (max-width: 767px)
+    text-align: right
+  h3
+    color: $menu-color
+    font: 300 2.9em Montserrat
+    padding: 20px
+    margin: 0
+    background: $menu-color
+    border-left: 1px solid #eff2f6
+    border-bottom: 1px solid #eff2f6
+    text-shadow: 0 0 39px rgba(0, 1, 1, 0.25)
+    user-select: none
+    @media (max-width: 1199px)
+      padding: 10px
+      font-size: 1.3em
+    @media (max-width: 767px)
+      display: none
+  a
+    display: block
+    font: 300 1.1em Montserrat
+    color: $menu-color
+    border-bottom: 1px solid #eff2f6
+    border-left: 1px solid #eff2f6
+    padding: 20px
+    margin: 0
+    transition: all .4s ease
+    @media (max-width: 1199px)
+      padding: 10px
+      font-size: .8em
+    &:last-child
+      border-bottom: none
+    &:hover
+      background: $menu-color
+      border-left: 1px solid #eff2f6
+      color: #fff

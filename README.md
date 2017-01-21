@@ -1,1 +1,7 @@
-# jq-lesson-part2
+# jq-lesson-part1
+
+for Install:
+
+    npn install
+    bower install
+    gulp build

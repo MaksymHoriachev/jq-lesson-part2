@@ -1,0 +1,24 @@
+{
+  "name": "hw-10",
+  "description": "my HW-8 trought Gulp",
+  "main": "index.js",
+  "authors": [
+    "Maxim Goryachev"
+  ],
+  "license": "ISC",
+  "homepage": "C:\\Users\\maxto\\PhpstormProjects\\business-plus",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "bootstrap": "v4.0.0-alpha.6",
+    "swiper": "^3.4.1"
+  }
+}
