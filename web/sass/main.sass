@@ -2,19 +2,78 @@
 @import fonts
 @import default
 @import variables
+@import buttons
 @import sandwich-menu
 @import header
 @import top
+@import fly
 
 
 
 
-
-
-
-
-
-
+.section-features
+  position: relative
+  padding-top: 120px
+  padding-bottom: 60px
+  .container
+    .row
+      .col
+        h3
+          color: #000
+          font: 700 48px/60px Montserrat
+          margin-bottom: 50px
+        .features-content
+          .features-list
+            .features-img
+              position: relative
+              height: 200px
+              img
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+          .list-technology:hover
+            .features-img
+              @keyframes technology
+                12.5%
+                  transform: translate(-50%,-50%) rotate(-45deg)
+                25%
+                  transform: translate(-50%,-50%) rotate(-90deg)
+                37.5%
+                  transform: translate(-50%,-50%) rotate(-135deg)
+                50%
+                  transform: translate(-50%,-50%) rotate(-180deg)
+                62.5%
+                  transform: translate(-50%,-50%) rotate(-225deg)
+                75%
+                  transform: translate(-50%,-50%) rotate(-270deg)
+                87.5%
+                  transform: translate(-50%,-50%) rotate(-315deg)
+                100%
+                  transform: translate(-50%,-50%) rotate(-360deg)
+              img
+                animation: technology .8s infinite
+          .list-signal:hover
+            .features-img
+              @keyframes technology
+                12.5%
+                  transform: translate(-50%,-50%) rotate(-45deg)
+                25%
+                  transform: translate(-50%,-50%) rotate(-90deg)
+                37.5%
+                  transform: translate(-50%,-50%) rotate(-135deg)
+                50%
+                  transform: translate(-50%,-50%) rotate(-180deg)
+                62.5%
+                  transform: translate(-50%,-50%) rotate(-225deg)
+                75%
+                  transform: translate(-50%,-50%) rotate(-270deg)
+                87.5%
+                  transform: translate(-50%,-50%) rotate(-315deg)
+                100%
+                  transform: translate(-50%,-50%) rotate(-360deg)
+              img
+                animation: technology .8s infinite
 
 
 

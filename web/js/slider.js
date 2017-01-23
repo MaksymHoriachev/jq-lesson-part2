@@ -5,6 +5,7 @@ var mySwiper = new Swiper ('.top-slider-container', {
     autoplay: 4000,
     speed: 1400,
     autoplayDisableOnInteraction: false,
+    paginationClickable: true,
 
     // If we need pagination
     pagination: '.top-slider-pagination'

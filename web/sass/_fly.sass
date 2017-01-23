@@ -1,0 +1,155 @@
+.section-fly
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  .tap-to-fly
+    position: relative
+    flex-basis: 30%
+    background-color: #f7f8f8
+    overflow: hidden
+    z-index: 10
+    @media (max-width: 767px)
+      flex-basis: 100%
+    &:hover
+      .tap-to-fly-circle
+        span
+          animation: second-circle .7s infinite
+          &:first-child
+            animation: first-circle .7s infinite
+          &:last-child
+            animation: third-circle .7s infinite
+    .tap-to-fly-circle
+      @keyframes first-circle
+        30%
+          width: 85%
+          height: 85%
+      @keyframes second-circle
+        30%
+          width: 70%
+          height: 70%
+      @keyframes third-circle
+        30%
+          width: 55%
+          height: 55%
+      span
+        position: absolute
+        top: 50%
+        right: 0
+        width: 60%
+        height: 60%
+        background-color: #eef1f5
+        transform: translate(50%,-50%)
+        border-radius: 50%
+        &:first-child
+          width: 75%
+          height: 75%
+          background-color: #f4f5f8
+        &:last-child
+          width: 45%
+          height: 45%
+          background-color: #e8ecf1
+    .tap-to-fly-bg
+      width: 100%
+    .tap-to-fly-content
+      position: absolute
+      top: 50%
+      left: 35%
+      right: 5%
+      transform: translateY(-50%)
+      h3
+        color: #000
+        font: 700 60px/60px Montserrat
+        @media (max-width: 539px)
+          font-size: 35px
+          line-height: 35px
+        @media (min-width: 768px) and (max-width: 1099px)
+          font-size: 20px
+          line-height: 20px
+        @media (min-width: 1100px) and (max-width: 1399px)
+          font-size: 35px
+          line-height: 35px
+        @media (min-width: 1400px) and (max-width: 1649px)
+          font-size: 50px
+          line-height: 50px
+      p
+        color: #92a1a5
+        font: 400 14px/30px Montserrat
+        @media (max-width: 1099px)
+          font-size: 10px
+          line-height: 12px
+        @media (min-width: 1200px) and (max-width: 1399px)
+          font-size: 12px
+          line-height: 16px
+  .fly-higher
+    position: relative
+    flex-basis: 70%
+    z-index: 20
+    @media (max-width: 767px)
+      flex-basis: 100%
+    .fly-higher-bg
+      width: 100%
+    .fly-higher-box
+      position: absolute
+      background-color: #000
+      top: 0
+      left: 0
+      right: 55%
+      bottom: 0
+      opacity: .5
+      transition: .5s
+    .fly-higher-text
+      position: absolute
+      top: 50%
+      left: 7%
+      right: 60%
+      transform: translateY(-50%)
+      color: #ffffff
+      font: 700 60px/72px Montserrat
+      @media (max-width: 539px)
+        font-size: 16px
+        line-height: 16px
+      @media (min-width: 540px) and (max-width: 767px)
+        font-size: 30px
+        line-height: 30px
+      @media (min-width: 768px) and (max-width: 1099px)
+        font-size: 20px
+        line-height: 20px
+      @media (min-width: 1100px) and (max-width: 1399px)
+        font-size: 35px
+        line-height: 35px
+      @media (min-width: 1400px) and (max-width: 1649px)
+        font-size: 50px
+        line-height: 50px
+    .btn-fly
+      position: absolute
+      top: 50%
+      right: 15%
+      background-color: #fff
+      border-color: #fff
+      transform: translate(50%,-50%) rotate(-90deg)
+      transition: .5s
+    .fly-higher-line-vertical
+      position: absolute
+      bottom: 0
+      right: 15%
+      width: 1px
+      height: 30%
+      background-color: #fff
+      transition: .5s
+    .fly-higher-line-horizontal
+      position: absolute
+      top: 50%
+      left: 55%
+      width: 0
+      height: 1px
+      background-color: #fff
+      transition: .5s
+    &:hover
+      .fly-higher-box
+        right: 45%
+      .btn-fly
+        transform: translate(50%,-50%) rotate(0deg)
+      .fly-higher-line-vertical
+        height: 0
+      .fly-higher-line-horizontal
+        width: 20%
